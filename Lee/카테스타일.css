@@ -1,0 +1,13 @@
+.header{ padding: 20px 40px}
+    h1{float:left;}
+    nav{float:right; }/*가로정렬*/
+    .gnb>li{float:left;}
+    .header_wrap{width:1200px; margin:0 auto;}
+
+    .gnb>li ul{ display:none; } /*안보이게*/
+    .gnb>li:hover{ 
+        ul{ display : block; }
+    } /*마우스 올리면 보이게*/
+
+    /*margin:0 auto;는 위아래는 0 왼쪽오른쪽은 오토값, 마진은 여백설정코드*/
+

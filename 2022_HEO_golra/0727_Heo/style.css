@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    width: 275px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.carousel-wrapper > .carousel {
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s;
+}

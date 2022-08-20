@@ -2,12 +2,13 @@
     box-sizing: border-box;
 }
 
-/* 매장 취식 버튼 */
-button.btn_shop {
+/* 매장 시식, 포장 버튼 */
+button.btn_shop,
+button.btn_packing {
     width: 750px;
     height: 180px;
 	background-color:#1c3e92;
-	border-radius:97px;           /* 모서리 깎임 정도? */
+	border-radius:97px;           /* 모서리 깎임 정도 */
 	border:7px solid #ffffff;   /* 테두리 굵기 */
 	display:inline-block;
 	cursor:pointer;
@@ -17,38 +18,20 @@ button.btn_shop {
     font-weight: bold;
 	padding:13px 22px;
 	text-decoration:none;
-    margin-left: 265px;
-    margin-right: 25px;
-    margin-top: 65px;
 }
-button.btn_shop:hover {
-	background-color:#163583;   /* 버튼 위에 마우스 뒀을 때 색깔 변화 */
+button.btn_shop:hover,			/* 버튼 위에 마우스 뒀을 때 */
+button.btn_packing:hover {
+	background-color:#163583;
 }
-button.btn_shop:active {
+button.btn_shop:active,			/* 버튼 눌렀을 때 액션*/
+button.btn_packing:active {
 	position:relative;
 	top:1px;
 }
 
-/* 포장 버튼 */
-button.btn_packing {
-    width: 750px;
-    height: 180px;
-    background-color:#1c3e92;
-	border-radius:97px;           /* 모서리 깎임 정도? */
-	border:7px solid #ffffff;   /* 테두리 굵기 */
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:55px;
-    font-weight: bold;
-	padding:13px 22px;
-	text-decoration:none;
-}
-button.btn_packing:hover {
-	background-color:#163583;   /* 버튼 위에 마우스 뒀을 때 색깔 변화 */
-}
-button.btn_packing:active {
-	position:relative;
-	top:1px;
+/* 매장 시식 버튼 */
+button.btn_shop {
+	margin-left: 265px;
+    margin-right: 25px;
+    margin-top: 65px;
 }

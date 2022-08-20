@@ -2,9 +2,20 @@
     box-sizing: border-box;     /* 테두리 영역의 크기 */
 }
 
-/* 커피 버튼 */
-button.btn_coffee {
-    width: 520px;
+.menu > .ch_coffee {
+	overflow: hidden;			/* div 크기 넘어가는 데이터는 숨김 */
+}
+
+/* 메뉴 카테고리 버튼 */
+button.btn_coffee,
+button.btn_nonCoffee,
+button.btn_juiceNade,
+button.btn_paiksCcino, 
+button.btn_blended, 
+button.btn_tea,
+button.btn_tapiocaPearl,
+button.btn_dessert {
+    width: 525px;
     height: 150px;
     background-color:#fad541;
     border: 0px;
@@ -12,87 +23,104 @@ button.btn_coffee {
 	cursor:pointer;
 	color:#292829;
 	font-family:Arial;
-	font-size:42px;
+	font-size:39px;
 	padding:15px 29px;
 	text-decoration:none;
     margin-right: -6px;
 }
-button.btn_coffee:hover {
+button.btn_coffee:hover,
+button.btn_nonCoffee:hover,
+button.btn_juiceNade:hover,
+button.btn_paiksCcino:hover, 
+button.btn_blended:hover, 
+button.btn_tea:hover,
+button.btn_tapiocaPearl:hover,
+button.btn_dessert:hover {
 	background-color:#292929;
     color: #ffffff;
 }
-button.btn_coffee:active {
+button.btn_coffee:active,
+button.btn_nonCoffee:active,
+button.btn_juiceNade:active,
+button.btn_paiksCcino:active, 
+button.btn_blended:active, 
+button.btn_tea:active,
+button.btn_tapiocaPearl:active,
+button.btn_dessert:active {
 	position:relative;
 	top:1px;
 }
 
-/* 음료 버튼 */
-button.btn_nonCoffee {
-    width: 520px;
-    height: 150px;
-    background-color:#fad541;
-    border: 0px;
-	display:inline-block;
-	cursor:pointer;
-	color:#292829;
-	font-family:Arial;
-	font-size:42px;
-	padding:15px 29px;
-	text-decoration:none;
-    margin-right: -6px;
+.ch_coffee > .coffee {
+	float: left; 
+	cursor: pointer; 
+	padding-right: 25px;
 }
-button.btn_nonCoffee:hover {
-	background-color:#292929;
-    color: #ffffff;
+.ch_coffee > .coffee > .menu_name {
+	font-size: 40px;
 }
-button.btn_nonCoffee:active {
-	position:relative;
-	top:1px;
+.ch_coffee > .coffee > .price {
+	font-size: 40px; 
+	float: right;
 }
 
-/* 주스, 스무디 버튼 */
-button.btn_juiceNade {
-    width: 520px;
-    height: 150px;
-    background-color:#fad541;
-    border: 0px;
-	display:inline-block;
-	cursor:pointer;
-	color:#292829;
-	font-family:Arial;
-	font-size:41px;
-	padding:15px 29px;
-	text-decoration:none;
-    margin-right: -6px;
+/* 하단 페이지 슬라이드 부분 */
+.paginate {
+	text-align: center;		/* 위치 가운데로 */
 }
-button.btn_juiceNade:hover {
-	background-color:#292929;
-    color: #ffffff;
-}
-button.btn_juiceNade:active {
-	position:relative;
-	top:1px;
+.paginate a {
+	text-decoration: none;
+	color: #7e7d7e;
 }
 
-/* 빽스치노 버튼 */
-button.btn_paiksCcino {
-    width: 520px;
-    height: 150px;
-    background-color:#fad541;
-    border: 0px;
-	display:inline-block;
-	cursor:pointer;
-	color:#292829;
-	font-family:Arial;
-	font-size:41px;
-	padding:15px 29px;
-	text-decoration:none;
+/* 가운데 동그라미 */
+.paginate > .slide1,
+.paginate > .slide2 {
+	width: 21px;
+	height: 21px;
+	background-color: #ffffff;
+	border-radius: 100%;
+	border: 2px solid #7e7d7e;
+	display: inline-block;
+	cursor: pointer;
+	margin-bottom: 15px;
 }
-button.btn_paiksCcino:hover {
-	background-color:#292929;
-    color: #ffffff;
+.paginate > .slide1:hover,			/* 버튼 위에 마우스 뒀을 때 */
+.paginate > .slide2:hover {
+	background-color: #1c3e92;
+	border: 2px solid #ffffff;
+
 }
-button.btn_paiksCcino:active {
-	position:relative;
-	top:1px;
+.paginate > .slide1:active,			/* 버튼 눌렀을 때 액션*/
+.paginate > .slide2:active {
+	background-color: #1c3e92;
+	border: 2px solid #ffffff;
+}
+
+.paginate > .slide1 {
+	margin-left: -10px;
+	margin-right: 15px;
+}
+.paginate > .slide12 {
+	margin-right: -10px;
+}
+
+/* 좌우 이동 화살표 */
+.paginate > .prev,
+.paginate > .next {
+	font-size: 90px;
+	border-left-width: 0;
+	border-right-color: #7e7d7e;
+}
+.paginate > .prev:hover,			/* 버튼 위에 마우스 뒀을 때 */
+.paginate > .next:hover {
+	cursor: pointer;
+	color: #1c3e92;
+}
+
+.paginate > .prev {
+	margin-right: 300px;
+}
+.paginate > .next {
+	margin-left: 300px;
 }

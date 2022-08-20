@@ -97,13 +97,13 @@ button.btn_dessert:active {
 .paginate > .slide1:hover,			/* 버튼 위에 마우스 뒀을 때 */
 .paginate > .slide2:hover {
 	background-color: #1c3e92;
-	border: 2px solid #ffffff;
+	border: 2px solid #1c3e92;
 
 }
 .paginate > .slide1:active,			/* 버튼 눌렀을 때 액션*/
 .paginate > .slide2:active {
 	background-color: #1c3e92;
-	border: 2px solid #ffffff;
+	border: 2px solid #1c3e92;
 }
 
 .paginate > .slide1 {

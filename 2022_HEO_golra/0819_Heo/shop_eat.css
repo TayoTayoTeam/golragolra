@@ -2,7 +2,9 @@
     box-sizing: border-box;     /* 테두리 영역의 크기 */
 }
 
-.menu > .ch_coffee {
+.menu > .ch_coffee,
+.menu > .ch_pakisccino,
+.menu > .ch_dessert {
 	overflow: hidden;			/* div 크기 넘어가는 데이터는 숨김 */
 }
 
@@ -51,15 +53,22 @@ button.btn_dessert:active {
 	top:1px;
 }
 
-.ch_coffee > .coffee {
+.ch_coffee > .coffee,
+.ch_Ncoffee > .Ncoffee,
+.ch_juiceNade > .juiceNade,
+.ch_pakisccino > .pakisccino,
+.ch_blended > .blended,
+.ch_tea > .tea,
+.ch_tapioca > .tapioca,
+.ch_dessert > .dessert {
 	float: left; 
 	cursor: pointer; 
 	padding-right: 25px;
 }
-.ch_coffee > .coffee > .menu_name {
+.menu_name {
 	font-size: 40px;
 }
-.ch_coffee > .coffee > .price {
+.price {
 	font-size: 40px; 
 	float: right;
 }

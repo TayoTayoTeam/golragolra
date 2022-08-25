@@ -7,7 +7,7 @@ button.btn_shop,
 button.btn_packing {
     width: 750px;
     height: 180px;
-	background-color:#1c3e92;
+	background-color:#193d99;
 	border-radius:97px;           /* 모서리 깎임 정도 */
 	border:7px solid #ffffff;   /* 테두리 굵기 */
 	display:inline-block;

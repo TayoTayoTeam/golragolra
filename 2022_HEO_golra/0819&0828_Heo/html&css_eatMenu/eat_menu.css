@@ -61,7 +61,7 @@ button.btn_dessert:active {
 .ch_tea > .tea,
 .ch_tapioca > .tapioca,
 .ch_dessert > .dessert {
-	float: left; 
+	float: left; 			/* 두 div 나란히 놓기 */ 
 	cursor: pointer; 
 	padding-right: 25px;
 }
@@ -90,25 +90,25 @@ button.btn_dessert:active {
 	background-color: #ffffff;
 	border-radius: 100%;
 	border: 2px solid #7e7d7e;
-	display: inline-block;
+	display: inline-block;			/* 두 div 나란히 놓기 */
 	cursor: pointer;
 	margin-bottom: 15px;
 }
 .paginate > .slide1:hover,			/* 버튼 위에 마우스 뒀을 때 */
 .paginate > .slide2:hover {
-	background-color: #1c3e92;
-	border: 2px solid #1c3e92;
+	background-color: #193d99;
+	border: 2px solid #193d99;
 
 }
 .paginate > .slide1:active,			/* 버튼 눌렀을 때 액션*/
 .paginate > .slide2:active {
-	background-color: #1c3e92;
-	border: 2px solid #1c3e92;
+	background-color: #193d99;
+	border: 2px solid #193d99;
 }
 
 .paginate > .slide1 {
 	margin-left: -10px;
-	margin-right: 15px;
+	margin-right: 17px;
 }
 .paginate > .slide12 {
 	margin-right: -10px;
@@ -124,7 +124,7 @@ button.btn_dessert:active {
 .paginate > .prev:hover,			/* 버튼 위에 마우스 뒀을 때 */
 .paginate > .next:hover {
 	cursor: pointer;
-	color: #1c3e92;
+	color: #193d99;
 }
 
 .paginate > .prev {
@@ -132,4 +132,112 @@ button.btn_dessert:active {
 }
 .paginate > .next {
 	margin-left: 300px;
+}
+
+/* 하단 주문바 */
+.orderbar {
+	width: 2100px;
+	height: 400px;
+	background-color: rgb(248,244,244);
+} 
+
+/* 주문 한 상품 박스 */
+.orderbar_text {
+	width: 290px;
+	height: 95px;
+	font-size: 40px;
+    font-weight: bold;
+	color: #ffffff;
+	background-color: #193d99;
+	border-top-right-radius: 45px;
+	border-top-left-radius: 45px;
+	margin-top: 40px;
+	margin-left: 900px;
+	padding:20px 30px;
+}
+
+/* 주문 한 상품 박스 좌우 화살표*/
+.car_left,
+.car_right {
+	background-color: rgb(248,244,244);
+	cursor:pointer;
+	border: 0px;
+	margin-top: 150px;
+}
+.car_left {
+	margin-left: 25px;
+}
+.car_right {
+	margin-left: 1070px;
+}
+.order_img1,
+.order_img2,
+.order_img3 {
+	margin-top: -200px;
+	margin-right: 60px;
+}
+.order_img1 {
+	margin-left: 110px;
+}
+
+/* 총 결제 금액 div, 결제 버튼 */
+.amountNcancle,
+.pay {
+	float: left; 				/* 두 div 나란히 놓기 */
+	margin-top: -350px;
+}
+
+/* 총 결제 금액 및 결제 취소 버튼 */
+.amountNcancle {
+	width: 520px;
+	height: 400px;
+	background-color: #292929;
+	margin-left: 1250px;
+}
+.amount_info {
+	width: 520px;
+	height: 250px;
+	display: table-cell;
+    vertical-align: middle;
+}
+.amount_text {
+	font-size: 40px;
+	color: #fad541;
+	margin-left: 270px;
+}
+.amount {
+	font-size: 60px;
+	font-weight: bold;
+	color: #fad541;
+	margin-left: 390px;
+}
+.cancle {
+	width: 520px;
+	height: 150px;
+	font-size: 44px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #1e1e1e;
+	cursor:pointer;
+	border: 0px;
+}
+.cancle:hover {
+	background-color: #151515;
+}
+/* 결제하기 버튼 */
+.pay {
+	width: 330px;
+	height: 400px;
+	color: #ffffff;
+	font-size: 49px;
+	font-weight: bold;
+	background-color: #193d99;
+	cursor:pointer;
+	border: 0px;
+}
+.pay:hover {			/* 버튼 위에 마우스 뒀을 때 */
+	background-color: #163583;
+}
+.pay_img {
+	margin-bottom: 40px;
 }

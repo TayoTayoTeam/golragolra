@@ -1,3 +1,16 @@
+function startPagePopup() {
+  var width = '650';
+  var height = '500';
+
+  var left = Math.ceil((window.screen.width - width)/2);
+  var right = Math.ceil((window.screen.height - height)/2);
+
+  window.open('C:\Users\gjdbs\OneDrive\바탕 화면\PROJECT\Wep Project\golragolra\2022_HEO_golra\0819&0828_Heo\startPagePopup.html',
+  'startpagePopup', 'width='+width+'height='+height+'left='+left);
+}
+
+
+
 btn_coffee.addEventListner('click', function() {
     
 });

@@ -3,8 +3,8 @@
 }
 
 /* 매장 시식, 포장 버튼 */
-button.btn_shop,
-button.btn_packing {
+.btn_shop,
+.btn_packing {
     width: 750px;
     height: 180px;
 	background-color:#193d99;
@@ -19,18 +19,17 @@ button.btn_packing {
 	padding:13px 22px;
 	text-decoration:none;
 }
-button.btn_shop:hover,			/* 버튼 위에 마우스 뒀을 때 */
-button.btn_packing:hover {
+.btn_shop:hover,			/* 버튼 위에 마우스 뒀을 때 */
+.btn_packing:hover {
 	background-color:#163583;
 }
-button.btn_shop:active,			/* 버튼 눌렀을 때 액션*/
-button.btn_packing:active {
+.btn_shop:active,			/* 버튼 눌렀을 때 액션*/
+.btn_packing:active {
 	position:relative;
-	top:1px;
 }
 
 /* 매장 시식 버튼 */
-button.btn_shop {
+.btn_shop {
 	margin-left: 265px;
     margin-right: 25px;
     margin-top: 65px;

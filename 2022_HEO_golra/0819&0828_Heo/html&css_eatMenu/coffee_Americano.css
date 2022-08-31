@@ -1,0 +1,24 @@
+/* 위치 수정 */
+.menu_img,
+.menu_title {
+    float: left; 
+}
+.minus,
+.menu_number,
+.plus,
+.menu_price {
+    float: left;
+}
+.menu_title,
+.minus {
+    float: inherit;
+}
+
+/* 메뉴 이름 */
+.menu_title {
+    font-size: 23px;
+    font-weight: bold;
+    top: 10px;
+    left: 10px;
+}
+

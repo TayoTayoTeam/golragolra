@@ -92,7 +92,7 @@ button.btn_dessert:active {
 	border: 2px solid #7e7d7e;
 	display: inline-block;			/* 두 div 나란히 놓기 */
 	cursor: pointer;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 .paginate > .slide1:hover,			/* 버튼 위에 마우스 뒀을 때 */
 .paginate > .slide2:hover {
@@ -115,16 +115,10 @@ button.btn_dessert:active {
 }
 
 /* 좌우 이동 화살표 */
-.paginate > .prev,
-.paginate > .next {
-	font-size: 90px;
-	border-left-width: 0;
-	border-right-color: #7e7d7e;
-}
 .paginate > .prev:hover,			/* 버튼 위에 마우스 뒀을 때 */
 .paginate > .next:hover {
-	cursor: pointer;
-	color: #193d99;
+	
+	
 }
 
 .paginate > .prev {

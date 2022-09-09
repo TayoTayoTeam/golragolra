@@ -1,10 +1,10 @@
-.section input[id ="slide"]{
-    display:none;
-}
-.section > .slidewrap{
-    max-width: 200px;
-    margin:0 auto;
-    overflow:hidden; /*해당 구역 벗어나면 안보이게*/
+/* INPUT 가리기 */
+.section [id="slide"] {display:none;}
+
+.section > .slidewrap{  /*전체 슬라이드 크기 조정*/
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden; /*해당 구역 벗어나면 안보이게*/
 }
 .section > .slidewrap > .slidelist{ /*줄바꿈을 없애줌*/
     white-space:nowrap;
@@ -31,18 +31,22 @@
     padding:50px;
     cursor:pointer; /*화살표에 커서 올리면 클릭할 수 있게*/
 }
-.section> .slidewrap> .slidelist> li > a> .left{  
-    left:100px;
-    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIjjRs4yU6ChjpOJPaOqTIh0iLqLBPdcrXSnF8REV_-ObkuDO50_JSoJsXST2dNf0GN0&usqp=CAU')
-    center center/ 20% no-repeat;
+.section> .slidewrap> .slidelist> li > a> .left{     
+    left:40px;
+    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgeIKGEC62L0pp2HdG91OI--lBtD8Yt0Hq2-1MMBAIU3gRq7lrcW8nwh9xoyzJaxDmb3o&usqp=CAU')
+    center center/ 50% no-repeat; /*화살표 크기 조정*/
 }
-.section> .slidewrap> .slidelist> li> a> .right{ /*!!!!화살표 누르면 무조건 가운데 위치로만 이동함*/
-    right:100px;
-    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgeIKGEC62L0pp2HdG91OI--lBtD8Yt0Hq2-1MMBAIU3gRq7lrcW8nwh9xoyzJaxDmb3o&usqp=CAU') 
-    center center/ 20% no-repeat;
+.section> .slidewrap> .slidelist> li> a> .right{ 
+    right:40px;
+    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIjjRs4yU6ChjpOJPaOqTIh0iLqLBPdcrXSnF8REV_-ObkuDO50_JSoJsXST2dNf0GN0&usqp=CAU') 
+    center center/ 42% no-repeat;
 }
 
-/*버튼누르면 이미지 넘어가기 ----------> 여기 해결 못함*/
-.section [id="slide1"]:checked ~ .slidewrap > .slidelist > li {transform:translateX(0%)}; /* translateX: x쪽으로만 이동*/
-.section [id="slide2"]:checked ~ .slidewrap > .slidelist > li {transform:translateX(-100%)};
-.section [id="slide3"]:checked ~ .slidewrap > .slidelist > li {transform:translateX(-200%)};
+/* INPUT 체크되면 변화값이 li까지 전달되는 스타일 */
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+
+.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}

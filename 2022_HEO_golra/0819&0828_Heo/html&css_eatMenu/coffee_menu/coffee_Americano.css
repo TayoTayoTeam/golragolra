@@ -1,0 +1,180 @@
+/* 위치 수정 */
+.menu_img,
+.menu_title,
+.add_text, 
+.add_price,
+.add_minus,
+.add_number,
+.add_plus,
+.syrup_text,
+.syrup_price,
+.syrup_minus,
+.syrup_number,
+.syrup_plus {
+    float: left; 
+}
+.menu_title,
+.minus {
+    float: initial;
+}
+.minus,
+.menu_number,
+.plus,
+.menu_price {
+    float: left;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.minus,
+.plus,
+.add_minus,
+.add_plus,
+.syrup_minus,
+.syrup_plus {
+    border: 0;
+    background-color: unset;    /* 디자인 요소 모두 지우기 */
+    cursor: pointer;
+}
+
+/* 메뉴 이름 */
+.menu_title {
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/* 메뉴 가격 */
+.menu_price {
+    font-size: 25px;
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+/* 개수 */
+.menu_number {
+    font-size: 16px;
+}
+
+/* 핫 앤 아이스 버튼 */
+.hot,
+.ice {
+    width: 130px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 97px;        /* 모서리 깎임 정도 */
+    cursor: pointer;
+}
+.hot {
+    
+    color: #db5757;
+    border: 2px solid #db5757;
+    margin-left: 80px;
+}
+.hot:hover,
+.hot:focus {
+    color: white;
+    background-color: #db5757;
+}
+.ice {
+    color: #3960c1;
+    border: 2px solid #3960c1;
+    margin-left: 5px;
+}
+.ice:hover,
+.ice:focus {
+    color: white;
+    background-color: #3960c1;
+}
+
+/* 유료 옵션 */
+.option_text {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+/* 샷추가, 시럽 라인 글씨크기 */
+.add_text,
+.add_price,
+.add_number,
+.syrup_text,
+.syrup_price,
+.syrup_number{
+    font-size: 15px;
+}
+
+/* 가격, 개수 색상 */
+.add_price,
+.add_number,
+.syrup_price,
+.syrup_number {
+    color: #3960c1;
+}
+
+/* 샷추가, 시럽 텍스트 */
+.add_text,
+.syrup_text {
+    margin-left: 32px;
+}
+
+/* 샷추가, 시럽 가격 */
+.add_price {
+    margin-left: 150px;
+}
+.syrup_price {
+    margin-left: 105px;
+}
+
+/* 샷추가, 시럽 개수 */
+.add_minus,
+.syrup_minus {
+    margin-left: 50px;
+} 
+
+/* 개수, -+ 버튼 */
+.add_number,
+.syrup_number,
+.add_plus,
+.syrup_plus {
+    margin-left: 3px;
+}
+
+/* 선택완료, 취소 버튼 */
+.cancel_option,
+.choice_option {
+    width: 160px;
+    height: 60px;
+	border-radius:97px;           /* 모서리 깎임 정도 */
+	display:inline-block;
+	cursor:pointer;
+	font-size:15px;
+    font-weight: bold;
+	text-decoration:none;
+}
+
+/* 취소 버튼 */
+.cancel_option {
+	background-color:#ffffff;
+	border:2px solid #193d99;   /* 테두리 굵기 */
+	color:#193d99;
+    margin-left: 40px;
+}
+.cancel_option:hover {
+    background-color:#f6f6f6;
+}
+
+/* 선택완료 버튼 */
+.choice_option {
+    background-color:#193d99;
+	border:2px solid #ffffff;   /* 테두리 굵기 */
+	color:#ffffff;
+    margin-left: 2px;
+}
+.choice_option:hover {
+    background-color: #163583;
+}
+
+.btn_option {
+    margin-top: 170px;
+}

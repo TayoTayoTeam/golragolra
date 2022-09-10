@@ -1,7 +1,4 @@
 
-
-
-
 btn_coffee.addEventListner('click', function() {
     
 });

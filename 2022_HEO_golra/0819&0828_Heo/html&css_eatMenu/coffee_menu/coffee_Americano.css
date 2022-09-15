@@ -47,7 +47,7 @@
 .menu_price {
     font-size: 25px;
     margin-top: 35px;
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 /* 개수 */
@@ -129,7 +129,7 @@
 /* 샷추가, 시럽 개수 */
 .add_minus,
 .syrup_minus {
-    margin-left: 50px;
+    margin-left: 46px;
 } 
 
 /* 개수, -+ 버튼 */

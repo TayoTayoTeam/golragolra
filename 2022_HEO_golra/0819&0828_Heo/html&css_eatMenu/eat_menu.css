@@ -76,8 +76,6 @@ button.btn_dessert:active {
 /* 하단 페이지 슬라이드 부분 */
 .paginate {
 	text-align: center;		/* 위치 가운데로 */
-}
-.paginate a {
 	text-decoration: none;
 	color: #7e7d7e;
 }
@@ -110,15 +108,8 @@ button.btn_dessert:active {
 	margin-left: -10px;
 	margin-right: 17px;
 }
-.paginate > .slide12 {
+.paginate > .slide2 {
 	margin-right: -10px;
-}
-
-/* 좌우 이동 화살표 */
-.paginate > .prev:hover,			/* 버튼 위에 마우스 뒀을 때 */
-.paginate > .next:hover {
-	
-	
 }
 
 .paginate > .prev {

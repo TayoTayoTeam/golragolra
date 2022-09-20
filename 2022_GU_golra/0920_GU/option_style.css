@@ -1,0 +1,27 @@
+#layout{
+    width: 600px;
+    height: 1200px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 450px;
+    border: 5px;
+}
+
+.cold,
+.ice,
+.sugar,
+.topping{
+    padding: 10px;
+    border: 1px solid black;
+    width: 850px;
+    height: 250px;
+    box-sizing: border-box;
+}
+
+.box{
+    padding : 10px;
+    border: 1px solid black;
+    width: 135px;
+    height: 135px;
+    box-sizing: border-box;
+    float:left;
+}

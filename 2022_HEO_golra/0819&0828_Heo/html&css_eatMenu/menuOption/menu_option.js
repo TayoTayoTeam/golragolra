@@ -6,6 +6,7 @@ var price = document.querySelector(".menu_price");
 
 minus.addEventListener('click', () => {
     countNum.innerHTML--;
+    price.innerHTML = (price * countNum);
 
     if (countNum.innerHTML <= 0) {
         countNum.innerHTML = 0;
@@ -13,7 +14,7 @@ minus.addEventListener('click', () => {
 });
 plus.addEventListener('click', () => {
     countNum.innerHTML++;
-    price.innerHTML + 1500;
+    price.innerHTML += price * countNum;
 });
 
 // 샷 추가 +- 버튼 설정

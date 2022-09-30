@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         <link rel="stylesheet" href="eat_menu.css"/>
-        <script src="eat.js"></script>
         <title> [메뉴 선택] 커피(COFFEE) </title>
     </head>
     <body>
@@ -29,7 +28,8 @@
             <div class="ch_coffee"
             style="width: 2100px; height: 2770px;">
                 <!-- 더블 에스프레소 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/05/%EB%8D%94%EB%B8%94%EC%97%90%EC%8A%A4%ED%94%84%EB%A0%88%EC%86%8C-2-450x588.png",
                     width="500px" height="550px" alt="">   
                     <center class="menu_name"> 더블에스프레소 </center>          <!-- center 가운데 정렬 태그 -->
@@ -45,7 +45,8 @@
                     <br>                                                        
                     <div class="price"> &#8361; 1,500 </div>                    
                 </div>
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/01/%EB%B9%BD%EC%82%AC%EC%9D%B4%EC%A6%88-%EC%95%97%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8-32oz-450x588.png", 
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> [빽사이즈]앗메리카노 </center>
@@ -53,14 +54,16 @@
                     <div class="price"> &#8361; 3,000 </div>
                 </div>
                 <!-- 원조 커피 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/05/ICED-%EC%9B%90%EC%A1%B0%EC%BB%A4%ED%94%BC-450x588.png", 
                     width="500px" height="550px" alt="">  
                     <center class="menu_name"> 원조커피 </center>
                     <br>
                     <div class="price"> &#8361; 2,500 </div>
                 </div>
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/01/%EB%B9%BD%EC%82%AC%EC%9D%B4%EC%A6%88-%EC%9B%90%EC%A1%B0%EC%BB%A4%ED%94%BC-32oz-%EA%B0%84%EC%96%BC%EC%9D%8C-450x588.png", 
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> [빽사이즈]원조커피 </center>
@@ -68,7 +71,8 @@
                     <div class="price"> &#8361; 3,500 </div>
                 </div>
                 <!-- 카페모카 -->
-                <div class="coffee" onclick=""> 
+                <div class="coffee" 
+                    onclick="openMenu()"> 
                     <img src="https://paikdabang.com/wp-content/uploads/2018/05/ICED-%EC%B9%B4%ED%8E%98%EB%AA%A8%EC%B9%B4-450x588.png", 
                     width="500px" height="550px" alt="">   
                     <center class="menu_name"> 카페모카 </center> 
@@ -76,14 +80,16 @@
                     <div class="price"> &#8361; 3,500 </div>
                 </div>
                 <!-- 빽s 카페라떼 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/05/%EB%B9%BDs-%EB%9D%BC%EB%96%BCICED-450x588.png",
                     width="500px" height="550px" alt="">    
                     <center class="menu_name"> 뻭S 라떼 </center>
                     <br>
                     <div class="price"> &#8361; 3,000 </div>
                 </div>
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/01/%EB%B9%BD%EC%82%AC%EC%9D%B4%EC%A6%88-%EB%B9%BDs-%EB%9D%BC%EB%96%BC-32oz-450x588.png",
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> [빽사이즈]뺵S라떼 </center>
@@ -91,7 +97,8 @@
                     <div class="price"> &#8361; 4,500 </div>
                 </div>
                 <!-- 바닐라 라떼 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/05/ICED-%EB%B0%94%EB%8B%90%EB%9D%BC%EB%9D%BC%EB%96%BC-450x588.png",
                     width="500px" height="550px" alt="">   
                     <center class="menu_name"> 바닐라라떼 </center>
@@ -99,7 +106,8 @@
                     <div class="price"> &#8361; 3,500 </div> 
                 </div>
                 <!-- 달달 연유라떼 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/05/ICED-%EB%8B%AC%EB%8B%AC%EC%97%B0%EC%9C%A0%EB%9D%BC%EB%96%BC_-450x588.png",
                     width="500px" height="550px" alt="">  
                     <center class="menu_name"> 달달연유라떼 </center>
@@ -107,7 +115,8 @@
                     <div class="price"> &#8361; 3,700 </div>
                 </div>
                 <!-- 캬라멜마끼아또 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/05/ICED-%EC%B9%B4%EB%9D%BC%EB%A9%9C%EB%A7%88%ED%82%A4%EC%95%84%EB%98%90-450x588.png",
                     width="500px" height="550px" alt="">   
                     <center class="menu_name"> 카라멜마끼아또 </center>
@@ -115,7 +124,8 @@
                     <div class="price"> &#8361; 3,500 </div>
                 </div>
                 <!-- 코코넛 카페라떼 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2022/06/%EC%BD%94%EC%BD%94%EB%84%9B%EB%9D%BC%EB%96%BCICED-450x588.png",
                     width="500px" height="550px" alt="">   
                     <center class="menu_name"> 코코넛카페라떼 </center>
@@ -123,7 +133,8 @@
                     <div class="price"> &#8361; 3,800 </div>
                 </div>
                 <!-- 코코넛 커피스무디 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2022/06/%EC%BD%94%EC%BD%94%EB%84%9B%EC%8A%A4%EB%AC%B4%EB%94%94-450x588.png",
                     width="500px" height="550px" alt="">  
                     <center class="menu_name"> 코코넛커피스무디 </center>  
@@ -131,7 +142,8 @@
                     <div class="price"> &#8361; 4,800 </div>
                 </div>
                  <!-- 아이스크림 카페라떼 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2022/05/%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC%EC%B9%B4%ED%8E%98%EB%9D%BC%EB%96%BC-450x588.png",
                     width="500px" height="550px" alt="">   
                     <center class="menu_name"> 아이스크림카페라떼 </center>
@@ -139,7 +151,8 @@
                     <div class="price"> &#8361; 3,700 </div>
                 </div>
                 <!-- 아이스크림 바닐라라떼 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2022/05/%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC%EB%B0%94%EB%8B%90%EB%9D%BC%EB%9D%BC%EB%96%BC-450x588.png",
                     width="500px" height="550px" alt="">   
                     <center class="menu_name"> 아이스크림바닐라라떼 </center>
@@ -147,7 +160,8 @@
                     <div class="price"> &#8361; 4,200 </div>
                 </div>
                 <!-- 아이스크림 카페모카 --> 
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2022/05/%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC%EC%B9%B4%ED%8E%98%EB%AA%A8%EC%B9%B4-450x588.png",
                     width="500px" height="550px" alt="">     
                     <center class="menu_name"> 아이스크림카페모카 </center>
@@ -155,14 +169,16 @@
                     <div class="price"> &#8361; 4,200 </div>
                 </div>    
                 <!-- 아샷추 -->          
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/01/%EC%95%84%EC%83%B7%EC%B6%94-450x588.png",
                     width="500px" height="550px" alt="">   
                     <center class="menu_name"> 아이스티샷추가(아.샷.추) </center>
                     <br>
                     <div class="price"> &#8361; 2,500 </div>
                 </div>
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/01/%EB%B9%BD%EC%82%AC%EC%9D%B4%EC%A6%88-%EC%95%84%EC%83%B7%EC%B6%94-32oz-450x588.png",
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> [빽사이즈]아이스티샷추가(아.샷.추) </center>
@@ -170,28 +186,32 @@
                     <div class="price"> &#8361; 3,500 </div>
                 </div>
                 <!-- 콜드브루 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/05/%EC%BD%9C%EB%93%9C%EB%B8%8C%EB%A3%A8-1-450x588.png",
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> 콜드브루 </center>
                     <br>
                     <div class="price"> &#8361; 4,000 </div>
                 </div>
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/05/%EC%BD%9C%EB%93%9C%EB%B8%8C%EB%A3%A8%EB%9D%BC%EB%96%BC-1-450x588.png",
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> 콜드브루 라떼 </center>
                     <br>
                     <div class="price"> &#8361; 4,500 </div>
                 </div>
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2022/01/%EC%BD%9C%EB%93%9C%EB%B8%8C%EB%A3%A8%EC%97%B0%EC%9C%A0%EB%9D%BC%EB%96%BC-450x588.png",
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> 콜드브루 연유라떼 </center>
                     <br>
                     <div class="price"> &#8361; 5,500 </div>
                 </div>
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2022/01/%EC%BD%9C%EB%93%9C%EB%B8%8C%EB%A3%A8%ED%9D%91%EB%8B%B9%EB%9D%BC%EB%96%BC-450x588.png",
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> 콜드브루 흑당라떼 </center>
@@ -199,28 +219,32 @@
                     <div class="price"> &#8361; 5,500 </div>
                 </div>
                 <!-- 디카페인 콜드브루 -->
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/05/%EB%94%94%EC%B9%B4%ED%8E%98%EC%9D%B8-%EC%BD%9C%EB%93%9C%EB%B8%8C%EB%A3%A8-1-450x588.png",
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> 디카페인 콜드브루 </center>
                     <br>
                     <div class="price"> &#8361; 4,000 </div>
                 </div>
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2018/01/%EC%BD%9C%EB%93%9C%EB%B8%8C%EB%A3%A8%EB%9D%BC%EB%96%BC-450x588.png",
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> 디카페인 콜드브루라떼 </center>
                     <br>
                     <div class="price"> &#8361; 4,500 </div>
                 </div>
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2022/01/%EC%BD%9C%EB%93%9C%EB%B8%8C%EB%A3%A8%EC%97%B0%EC%9C%A0%EB%9D%BC%EB%96%BC-450x588.png",
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> 디카페인 콜드브루연유라떼 </center>
                     <br>
                     <div class="price"> &#8361; 5,500 </div>
                 </div>
-                <div class="coffee" onclick="">
+                <div class="coffee" 
+                    onclick="openMenu()">
                     <img src="https://paikdabang.com/wp-content/uploads/2022/01/%EC%BD%9C%EB%93%9C%EB%B8%8C%EB%A3%A8%ED%9D%91%EB%8B%B9%EB%9D%BC%EB%96%BC-450x588.png",
                     width="500px" height="550px" alt="">
                     <center class="menu_name"> 디카페인 콜드브루흑당라떼 </center>
@@ -282,5 +306,6 @@
                 </button>
             </div>
         </div>
+        <script src="eat.js"></script>
     </body>
 </html>

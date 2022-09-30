@@ -12,6 +12,6 @@ prev_menu.addEventListener('click', () => {
 
 // 메뉴 선택창에서 클릭한 메뉴 옵션창 띄우기
 function openMenu() {     
-  var uri = './coffee_menu/coffee_Americano.html';
+  var uri = './menuOption/coffee_option.html';
   window.open(uri, '_blank', 'width=430px, height=600px, left=535px, top=150px, toolbars=no, scrollbars=no');
 }

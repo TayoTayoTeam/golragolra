@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option</title>
+    <link rel="stylesheet" href="option_style.css"/>
+    
+    <body>
+
+        <div id="layout">
+            <!--포장/매장-->
+            <div class="cold">
+                <strong>COLD/HOT</strong>
+                <br><br>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="https://cdn-icons-png.flaticon.com/512/660/660026.png",
+                        width="60" height="60"/>
+                        <br>COLD(포장)<br>
+                        +0
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="data:image/png;base64,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",
+                        width="60" height="60"/>
+                        <br>COLD(매장)<br>
+                        +0
+                    </center>
+                </div>
+            </div>
+
+            <!--얼음양-->
+            <div class="ice">
+                <strong>얼음양</strong>
+                <br><br>
+                <div class="box">Regular Ice</div>
+                <div class="box">Full Ice</div>
+                <div class="box">Less Ice</div>
+            </div>
+
+            <!--당도-->
+            <div class="sugar">
+                <strong>당도</strong>
+                <br><br>
+                <div class="box">0%</div>
+                <div class="box">30%</div>
+                <div class="box">50%</div>
+                <div class="box">70%</div>
+                <div class="box">100%</div>
+            </div>
+
+            <!--토핑-->
+            <div class="topping">
+                <strong>토핑</strong>
+                <br><br>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_2.gif ",
+                        width="60" height="60"/>
+                        <br>펄<br>
+                        +500원
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_1.gif",
+                        width="60" height="60"/>
+                        <br>밀크폼<br>
+                        +500원
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_4.gif",
+                        width="60" height="60"/>
+                        <br>코코넛  <br>
+                        +500원
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_3.gif",
+                        width="60" height="60"/>
+                        <br>알로에  <br>
+                        +500원
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_5.gif",
+                        width="60" height="60"/>
+                        <br>화이트펄<br>
+                        +500원
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_6.gif",
+                        width="60" height="60"/>
+                        <br>치즈폼<br>
+                        +700원
+                    </center>
+                </div>
+            </div>
+        </div>
+    </body>
+</head>

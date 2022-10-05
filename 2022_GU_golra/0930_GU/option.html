@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option</title>
+    <link rel="stylesheet" href="option_style.css"/>
+    
+    <body>
+
+        <div id="layout">
+            <!--포장/매장-->
+            <div class="cold">
+                <strong>COLD/HOT</strong>
+                <br><br>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="https://cdn-icons-png.flaticon.com/512/660/660026.png",
+                        width="60" height="60"/>
+                        <br>COLD(포장)<br>
+                        +0
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="data:image/png;base64,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",
+                        width="60" height="60"/>
+                        <br>COLD(매장)<br>
+                        +0
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="https://cdn-icons-png.flaticon.com/512/660/660026.png",
+                        width="60" height="60"/>
+                        <br>HOT(포장)<br>
+                        +0
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX///8AAAArKyvS0tLp6enIyMhBQUFPT0+goKD39/f6+vry8vLj4+Ps7OzOzs709PSTk5PY2Nivr69eXl67u7sgICCFhYV6enpwcHDk5OSdnZ2pqaljY2MbGxspKSk7OzsLCwtHR0eNjY2/v7+0tLRpaWlMTEwyMjIVFRVWVlZ1dXWPj4/zxCBdAAALZ0lEQVR4nO2daUPCOBCGBbwAFTzwQhC88Pj//29XFOwzSZumTSZx1/cjSWmmSSZzZ2cnBvrT/cViOe1H+fMccLLorPHaSz2SSDjtbHGUeixx0P2hcJl6LFFw2yngv7hOd4sEdg5TDycCrkDhZerhhMcRCOzcph5PeHAKOyepxxMcAxI4ST2e8HgihXupx9Mcg4H99wMQ+Oz9fCboT8+7q7snyyBHnMLdkj/Yu76fHzyUtaZHb/I1/ntTJuuBwCv784O77/azyANtisJ5MJRth6Dw1P4HPys5TxJHsx8SzmXje5HAe/sfXBa6HMcebROcF4m4qWq0L9KLYpdx/PF64wzr8Em0vhUbrWuQvGhfYcSeGGKAhlCGw+LR9gd3/AOFIXtCCGVT0Yw5lBP8iVM+P9cYsxeOOUBD7MQ+tOkV53y+5DxJiDEHOJPt18VWi4IvNI+y8yQh5tVTKM5DU2h54PPvKoP2gdhFJq8/Qbu5EZdov89POOUUvZkddqs7CE6coSUO28w47j9xX0kCpzjH4x6HwbWtBwxtBjedojW/NSq2ke24k8xSEIFV/qIxYl+AwgtrFy5TIbhhhg2xPQdglX5Yu3AhzqsaFQbsjeeK0X9DsEuemHsVbXngAyO0StZCciU7otCX4zIlt7e7XSgVLGAGGFAmyk9m2xm+1phEmtvIcTnBOU4itbuVtQ+UeGFQ5EbMcSeKEVqPxB32wZEolumByqD9MOHwrX2oQNCDSJknR5u4sNpLHX8NyjU0dAiTcYk5LiUGnET7TuwWuwjL/iWez9FHTFubnZ1imS7Y1ufzObJTCp53ti6P6CIaxU7M0HnBw8A07O9IPXjExj7XuXUnJwYn0aZhUDiTs0TxO8dlyjVoMxkOF8UeUtEfzIqtM9siSA2IbjZ+T/3CsMaMq5szAEdo6cBVaviXbtBsF27Tgm5QS4dTRwcs4hxjirgILfvo0EEhTAU5RtyQQouTE84JixYJCnO0KVLuNNsptjyYHaBg5LhKXfakaieq/AJ2DSwtcORbZG/qgOY+5RfK8LQgKzXdR5QILNtwhQ4ZBivsY4Cms57tJiPhFFrcO6nBo8CcAqEjG+4b4UbOj5UKx4Q5BfeO9jf+QX7b8JkDNBapmCJDJhO2rPxC3YWdZWZ4yGg0Nhz9MlQhP6lUTIF5XJPTmnyIz2cYYUsN/9XsMHQQQAoztCZSbbAp+OfV7bBh5KjgD5wDLHwDm5cX1sT8GOkOTWV2cWR7IK5cVqocrVD/4mU7wDI+uPcl1VzZk/N+JAarJTIDjN4cBP6L0+ntRam8uSHRGsuRB/aeJ6/345G7YwmOH1avk/cM3aN/+G3oXa+66XAQnc0OhPiYAJH9bsvU9HUiR2rcut8fH3bvayAs3O9XQETNqud+uwYihrnvud+ugYhGqkwojBht80ehEv4o/KPwj8INVqc9NZxepqBQNQny8I/CQPijMB7+xxTu7l1Mbz/Gt0+PvRAVxDKjsDdedoDraVvXeE4U9q6YAfGN5WErIvOh8ELMHmayhdcjEwrfTrqdSlw3jtzMhMIaaBpQ9Xso7Bw0246/iMLOolFm0W+isFlg3O+isEkdn19GYUlGchV+G4X+Po5fR+HC92DMksLV2/P1893LzNroG7aSH4VXj8ffKsXw6PDN0sGToWZG4eRMRM/tXpmd/EpQ5EWhLV3hxvDgWgLmK5COQtNx2S1xlBrfwkt8A4WqiawGhda4qjUeRU+vzJR8KKzKbBMkzn12Yj4UVh7loiyXTyRnOgrFoB11lpkV4OMyplW/1ZA9ISh0iCqiMJfHexCrvdIsdsTiKc5Z4ZnhEZ4CCueaNxywHINTuaWTzEOLQizGpHkQoj9IobN7H1KqRzgnKFRNRYZ3rQYHePfsvwF28Ktm6hUorMEckQhoyRwoAyhcaFY9gEhdIyWK3LT+SJnbZCutFwso6ldDDuNI6zNTVn3QTBkA+69h7h0hfaO+YZHZWZoB2agxVSOKdtBtRmF/kYpCpPbVOd+Qj+ohmb6mohBTUsdICAo9zN+zVBTi09aYkqarlOlXmvllxffWsYKS03iYTfFlNBPmQWGNxbPr+8AGULw0868w4BoHeOOTO1XhClbcqCHyU/ry0POQzqx4odGRL4WQS31SbiEeKtZNZwh9DcUUkrqPvQXGBMUsOmi0dYxnkPJ86p+jsEP5dTjBgTzqGlPCymg+LBHLW7FAJd5bIxmhecUpfks9UxRM9TXWDouI+BgjsB9meqYomGlqbCvwfA8VX6rOeoYaKMA1TikM0+uiheNEFHpKGjQm+sleeFTPULPyG/F1i2HiUb16xlCenKyRFbU8/ZxQ8vWUCwzZqSmwmpGncAlrglpFNW5/pwXsBd09VxrqdqspF2ThLl2IQqyviwwSrZpyAY+Q09bOek5+kQpC9FarIkO/pUOUEiW5fK1JEJ/UfKQQS11XmNQpgF8BFktqOGBvQGhzrBzh//UOT3TVWI0D7CyHEMbQr4X3u2gw0RJqYNOv5uCi5rY/u2dZNi2hBia+ynUnioI3EJ0H3ub1ABjWN0SL6vz2S32q4esECgFq7FXsX7CZRtqPr6YWAjzhqg58sUZ9T/s1sAyUaoxS3avoiPiE6q7lQIBZt9mIfQExo+L+TsFHG+o++J5eFpDmqLluuF0bB8A2DXJog5p7X9yj2bTc0k2IP/EE9L1S/i2u223MBkf6TtI+bBhlZ7C4ybQzaWzNhXyhouVTjio5DsU1N20+fmOfR2Nw69unRgZ3tzmq9Q9EGpasXVikuNMukQDvU3Fd3DqHblboahOvhQNxoRGfCEnFti9MAhtkHv6AQqJGbBsM3haFz1iibeVl/JdG2W3H7Jhlgdo6NnE6KZhMaVYwDguDi7YPXoYhRCFagXMkNz59oWu03jkwmSrcToyzvCu8ssxSWKO9aQVv9AnGaQgcwMKUSDfaGgHcReTN8VMSYDfBrhgy+2eNEHIkqq8ryN6TMgKkUSYUgdo3azHKsLDJLDwmFGvXZabcFFs+ORA3hoQk0Dt/pR0Yg7dhpUfCqrZGsHvMdC9CR7Dg5m4Wa2p3OOstd3hsyRR74kvuPrYl3reTtgl61SNLpqO5QYW4VukbIZn6AOEKkSVTWr5OyiZwEXYpwaoVWc2nYD0y7TFrlOeuNwPMWpHt3pCCX3d5A/0Gz6FjCCntx01hw7FXUjA9/EYhM43rJrWdewIRBEfeMh71vtBRGVlb7Ec5rpbFV0QN93ZWLr6Mo74x1j+miui6jCGWn52OupgWRevht8VBNN8XLYoxVcRKAmNyALwoolQjnZ5FrKLmPy6Lr4rIakxTocZ3/YTzjvFAkE7BLV5iJ7CS1cTzdb+UEBg/kIcKVLR476G9zNyzQhoEpZpothqbNa2zrxM8AFNsRYhLO1jMabOAqnwlKGvEMgubJu2xWq4V10+kM3+wEvRdKRb9OdbwsdEY3HnXLKYi+HikXEuanPRykL4A9SJSQSWGw0Z5RQWouMVh4DiS1K9f5R6JIuXTva2WZLXFPPoHpmiofwEry73GOKbiv6Ea/MIxNmLabSh3SYSNSO1XsczIFpD7I8RkxF8kLsQ+rSCUTjRLGG7AbxxeNIWHSynvgaAWHHyf0J6nfxp+AqJp8Jq71A1TbEO5EUMbaxhrEfjPa6Jxodc6oEtGLeOYOIY7bx5WO6VAo1lWrIglRrEfkqGL2s+6uu8PpGPo42Q3CE6nIiQvmqnLBZH5Hg+N8giDQFqKYkFfc9qgwnESEok46RqWENYISDeFStfJK9b2s2DsHmBbzJISKIWrGEh1Fm5RHUvQHmlk7iKs4cjhkJLLbNHwxrA6ONC8f6ECR8YlS2HQ1axU7EBPVjMIgKW8kSsx+o/jt3lJdKQvFrP9q7Poqf7/AN9aiZMxz3+YAAAAAElFTkSuQmCC",
+                        width="60" height="60"/>
+                        <br>HOT(매장)<br>
+                        +0
+                    </center>
+                </div>
+            </div>
+
+            <!--얼음양-->
+            <div class="ice">
+                <strong>얼음양</strong>
+                <br><br>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="https://postfiles.pstatic.net/MjAyMjA5MzBfMjA5/MDAxNjY0NTI0MTM5Nzgw.iO4MSGy2um5e9Y8rI59HpHhpA9U2EAnkkV9ipTa-bNog.IDn_DPPIPupcDxkirFHAZc-mSHa_YqBcOLAsM53NqKcg.PNG.sally4898/image.png?type=w773",
+                        width="70" height="70"/>
+                        Regular Ice
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="https://postfiles.pstatic.net/MjAyMjA5MzBfMTgg/MDAxNjY0NTI0MTM1NTI3.CqeNbsvBRJioqPQFcz-R1V6toleE1gwojP1RBbt_VrIg.1cNXu0peXPP2P-sGn3Fbkju4EypkAkj4lrywUNBNiGIg.PNG.sally4898/image.png?type=w773",
+                        width="70" height="70"/>
+                        <br>Full Ice
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="https://postfiles.pstatic.net/MjAyMjA5MzBfMjI5/MDAxNjY0NTI0MTQxNzA4.dGrPaEC4iR0dPJ-q4Kz6Zmcl6HZvA8DfIFECFHhEE7Yg.UlH3MxjvTvwPfSWe7r_O-OAgczPMX7NF7RIMIKqROa4g.PNG.sally4898/image.png?type=w773",
+                        width="70" height="70"/>
+                        <br>Less Ice
+                    </center>
+                </div>
+            </div>
+
+            <!--당도-->
+            <div class="sugar">
+                <strong>당도</strong>
+                <br><br>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="https://postfiles.pstatic.net/MjAyMjA5MzBfNzgg/MDAxNjY0NTI0NjIyNDU4.Q2EdEg8qyy0vI0j51Uh-YOEOQNEIHgP60PrQgp_iqowg.HK-JjC2yCocK03BEUKHKXFbkuOwIs69e20Epr1AEOIog.PNG.sally4898/image.png?type=w773",
+                        width="70" height="70"/>
+                        <br>0%
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="https://postfiles.pstatic.net/MjAyMjA5MzBfMjIx/MDAxNjY0NTI0MTQ0NzQ0.ej8PahBTQnMMN2CkVmbreoKlsEXCgek_X9bWlPintiQg.Cd2AirDUdbQPPOBKGA405clj7YKZWIn2Q3IUfLfpnfog.PNG.sally4898/image.png?type=w773",
+                        width="70" height="70"/>
+                        <br>30%
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="https://postfiles.pstatic.net/MjAyMjA5MzBfMjM1/MDAxNjY0NTI0MTQ5MTky.NeQAvFzsk2_mr4oyzQ4CxbCCKkhXSfQwccn6e-9gWywg.BlROni8hGl_6w09M338LnDxJbXUhnETIR_EvSP-PYWkg.PNG.sally4898/image.png?type=w773",
+                        width="70" height="70"/>
+                        <br>50%
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="https://postfiles.pstatic.net/MjAyMjA5MzBfMjE3/MDAxNjY0NTI0MTQ2OTA1.IVGnE0FLZrdS66yRdHynsxC-lUYr5OdrO6LLsQBLEIEg.grWfoCVWf3MpwvkV6RUGaZJjrHAxxTt-P9-0PV8pYbEg.PNG.sally4898/image.png?type=w773",
+                        width="70" height="70"/>
+                        <br>70%
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="https://postfiles.pstatic.net/MjAyMjA5MzBfMjM1/MDAxNjY0NTI0NjE5MTQ1.bCc4V_UGMKAIdv42HWlmq1-ZA8OCuFvk37wSry7AajYg.ouFdRbSFQutt8Qry-gexsElZfJLfRGHCr7-IcWu5ry0g.PNG.sally4898/image.png?type=w773",
+                        width="70" height="70"/>
+                        <br>100%
+                    </center>
+                </div>
+            </div>
+
+            <!--토핑-->
+            <div class="topping">
+                <strong>토핑</strong>
+                <br><br>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_2.gif ",
+                        width="60" height="60"/>
+                        <br>펄<br>
+                        +500원
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_1.gif",
+                        width="60" height="60"/>
+                        <br>밀크폼<br>
+                        +500원
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_4.gif",
+                        width="60" height="60"/>
+                        <br>코코넛  <br>
+                        +500원
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_3.gif",
+                        width="60" height="60"/>
+                        <br>알로에  <br>
+                        +500원
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_5.gif",
+                        width="60" height="60"/>
+                        <br>화이트펄<br>
+                        +500원
+                    </center>
+                </div>
+                <div class="box">
+                    <center>
+                        <input type="radio"><br>
+                        <img alt="" src="http://www.gong-cha.co.kr/view/gongcha/images/menu/order_method_img2_6.gif",
+                        width="60" height="60"/>
+                        <br>치즈폼<br>
+                        +700원
+                    </center>
+                </div>
+            </div>
+        </div>
+    </body>
+</head>

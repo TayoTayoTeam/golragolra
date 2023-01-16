@@ -1,26 +1,27 @@
 // 음료 개수 +- 버튼 설정
-const minus = document.querySelector(".minus");
-const plus = document.querySelector(".plus");
-var countNum = document.querySelector(".menu_number");
-var price = document.querySelector(".menu_price");
+const minus = document.getElementById("minus");
+const plus = document.getElementById("plus");
+var countNum = document.getElementById("menu_number");
+var price = document.getElementById("menu_price");
+var MPrice = 1500;
 
 minus.addEventListener('click', () => {
-    countNum.innerHTML--;
-    price.innerHTML = (price * countNum);
-
     if (countNum.innerHTML <= 0) {
         countNum.innerHTML = 0;
     }
+    countNum.innerHTML--;
+    MPrice = MPrice - 1500;
 });
 plus.addEventListener('click', () => {
     countNum.innerHTML++;
-    price.innerHTML += price * countNum;
+    MPrice = MPrice + 1500;
 });
+price.innerHTML = "&#8361" + " " + MPrice;
 
 // 샷 추가 +- 버튼 설정
-const ad_minus = document.querySelector(".add_minus");
-const ad_plus = document.querySelector(".add_plus");
-var ad_countNum = document.querySelector(".add_number");
+const ad_minus = document.getElementById("add_minus");
+const ad_plus = document.getElementById("add_plus");
+var ad_countNum = ddocument.getElementById("add_number");
 
 ad_minus.addEventListener('click', () => {
     ad_countNum.innerHTML--;
@@ -34,9 +35,9 @@ ad_plus.addEventListener('click', () => {
 });
 
 // 시럽 추가 +- 버튼 설정
-const sy_minus = document.querySelector(".syrup_minus");
-const sy_plus = document.querySelector(".syrup_plus");
-var sy_countNum = document.querySelector(".syrup_number");
+const sy_minus = document.getElementById("syrup_minus");
+const sy_plus = document.getElementById("syrup_plus");
+var sy_countNum = document.getElementById("syrup_number");
 
 sy_minus.addEventListener('click', () => {
     sy_countNum.innerHTML--;

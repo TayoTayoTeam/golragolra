@@ -15,3 +15,6 @@ function openMenu() {
   var uri = './menuOption/coffee_option.html';
   window.open(uri, '_blank', 'width=430px, height=600px, left=535px, top=150px, toolbars=no, scrollbars=no');
 }
+
+const total = document.getElementById("amount");
+

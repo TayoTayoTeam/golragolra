@@ -11,14 +11,14 @@ prev_menu.addEventListener('click', () => {
 });
 
 // 메뉴 선택창에서 클릭한 메뉴 옵션창 띄우기
-function openMenu(image) {     
+function openMenu(image, menuname) {     
   var img = new Image();
   img.src = image;
 
   var uri = './menuOption/coffee_option.html';
   let openWin = window.open(uri, 'child', 'width=430px, height=600px, left=535px, top=150px, toolbars=no, scrollbars=no');
 
-  openWin.document.getElementById("menu_title").value = document.getElementById("coffee_name1").value;
+  openWin.document.getElementById("menu_title").value = menuname;
   openWin.document.getElementById("menu_image").value = img;
 }
 
